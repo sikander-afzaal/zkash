@@ -4,7 +4,7 @@ import Button from "../components/Button";
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
   return (
-    <header className="wrapper fixed top-7 z-50 left-0">
+    <header className="wrapper fixed top-5 sm:top-7 z-50 left-0">
       {headerToggle && (
         <div
           onClick={() => setHeaderToggle(false)}
@@ -12,7 +12,7 @@ const Header = () => {
         ></div>
       )}
       <div className="contain  justify-between relative items-center px-3 xl:px-[36px] py-6 bg-secondaryBlack border-primaryYellow border-2 border-solid">
-        <div className="bg-secondaryBlack border-2 border-primaryYellow border-solid w-full h-full absolute -bottom-[14px] -z-10 -right-[14px]"></div>
+        <div className="bg-secondaryBlack border-2 border-primaryYellow border-solid w-full h-full absolute -bottom-2 sm:-bottom-[14px] -z-10 -right-2 sm:-right-[14px]"></div>
         <img
           src="/logo.png"
           className="h-[40px] xl:h-[60px] object-contain"
@@ -75,7 +75,7 @@ const Header = () => {
           </div>
         </div>
         <button
-          className="relative cursor-pointer z-[91] text-white"
+          className="relative cursor-pointer lg:hidden block z-[91] text-white"
           onClick={() => setHeaderToggle((prev) => !prev)}
         >
           {headerToggle ? (
