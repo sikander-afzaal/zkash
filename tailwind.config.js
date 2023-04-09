@@ -15,6 +15,8 @@ export default {
         secondaryBlack: "#11111A",
         lightBlue: "#0096C4",
         aspidBlue: "#0287FF",
+        success: "#00CF53",
+        fail: "#FF0000",
       },
       backgroundImage: {
         sectionBg: "url('/section-bg.png')",
