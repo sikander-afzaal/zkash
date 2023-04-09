@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 const Token = () => {
   const { pathname } = useLocation();
   return (
-    <div className="wrapper mt-[160px] xl:mt-[200px]">
+    <div className="wrapper mt-[160px] pb-20 xl:mt-[200px]">
       <div className="contain flex-col gap-10 justify-center items-center">
         <div className="flex sm:flex-row flex-col w-full justify-center items-center gap-7">
           <Link to={"/token"} className="w-full sm:w-auto">

@@ -1,10 +1,16 @@
 import { useState } from "react";
+import BlueBoxLayout from "../../components/BlueBoxLayout";
 
 const Overview = () => {
   const [time, setTime] = useState(5);
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full gap-8">
-      <TokenBox>
+    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full gap-12 sm:gap-8 relative">
+      <img
+        src="/landing-hero.png"
+        className="object-contain md:block hidden top-full -translate-y-[3%] xl:-translate-y-[14%] left-1/2 -translate-x-1/2 max-w-[650px] absolute z-30"
+        alt=""
+      />
+      <BlueBoxLayout>
         <h3 className="text-aspidBlue px-5 text-xl sm:text-2xl">
           Reward Token
         </h3>
@@ -36,8 +42,8 @@ const Overview = () => {
           className="w-full h-[172px] object-cover mt-4"
           alt=""
         />
-      </TokenBox>
-      <TokenBox>
+      </BlueBoxLayout>
+      <BlueBoxLayout>
         <h3 className="text-aspidBlue px-5 text-xl sm:text-2xl">$ZKASH</h3>
         <p className="text-white sm:text-base text-xs px-5">
           $0.00057270 <span className="text-success">+20%</span>{" "}
@@ -93,8 +99,8 @@ const Overview = () => {
             </div>
           </div>
         </div>
-      </TokenBox>
-      <TokenBox>
+      </BlueBoxLayout>
+      <BlueBoxLayout>
         <h3 className="text-aspidBlue px-5 text-xl sm:text-2xl">Info</h3>
         <div className="flex justify-start mb-3 sm:mt-3 items-center flex-col gap-4 px-5 w-full">
           <div className="flex justify-between  items-center w-full gap-1">
@@ -118,62 +124,79 @@ const Overview = () => {
             <p className="text-white text-sm">$10.3M</p>
           </div>
         </div>
-      </TokenBox>
+      </BlueBoxLayout>
+      <BlueBoxLayout>
+        <h3 className="text-aspidBlue px-5 text-xl sm:text-2xl">Stats</h3>
+        <div className="flex justify-start mt-1 items-center flex-col gap-4 px-5 w-full">
+          <div className="flex justify-between  items-center w-full gap-1">
+            <p className="text-white font-fifaks">Daily Volume</p>
+            <p className="text-white text-sm">$120.6K</p>
+          </div>
+          <div className="flex justify-between  items-center w-full gap-1">
+            <p className="text-white font-fifaks">Hourly Volume</p>
+            <p className="text-white text-sm">$120.6K</p>
+          </div>
+          <div className="flex justify-between  items-center w-full gap-1">
+            <p className="text-white font-fifaks">Daily Rewards Volume</p>
+            <p className="text-white text-sm">$120.6K</p>
+          </div>
+          <div className="flex p-8 w-full bg-aspidBlue justify-start items-start flex-col gap-5 mt-10 mb-5">
+            <p className="text-lg text-white">Your $ZKASH Balance</p>
+            <div className="flex justify-between  items-center w-full gap-1">
+              <p className="text-white font-fifaks">Daily Rewards</p>
+              <p className="text-white text-sm">$8.4K</p>
+            </div>
+          </div>
+        </div>
+      </BlueBoxLayout>
+      <BlueBoxLayout>
+        <h3 className="text-aspidBlue px-5 text-xl sm:text-2xl">
+          Rewards Queue
+        </h3>
+        <p className="text-lg font-fifaks px-5 text-white">
+          Automatically distributes your rewards once first in line.
+        </p>
+        <p className="font-fifaks px-5 text-primaryYellow">
+          Your wallet is not accuing rewards!
+        </p>
+        <div className="flex justify-start mt-1 mb-5 items-center flex-col gap-4 px-5 w-full">
+          <div className="flex justify-between  items-center w-full gap-1">
+            <p className="text-white font-fifaks">Pending Rewards</p>
+            <p className="text-white text-sm">$120.6K</p>
+          </div>
+          <div className="flex justify-between  items-center w-full gap-1">
+            <p className="text-white font-fifaks">Total Rewards</p>
+            <p className="text-white text-sm">$120.6K</p>
+          </div>
+        </div>
+      </BlueBoxLayout>
+      <BlueBoxLayout>
+        <h3 className="text-aspidBlue flex justify-start items-center gap-2 px-5 text-xl sm:text-2xl">
+          APY{" "}
+          <p className="text-[#08080C] text-sm bg-[#00FEC6] px-[10px] py-1">
+            Beta
+          </p>
+        </h3>
+        <h3 className="text-primaryYellow  px-5 text-xl sm:text-2xl">12%</h3>
+        <div className="flex justify-between  items-center w-full gap-1 px-5">
+          <p className="text-white font-fifaks">My ZKASH</p>
+          <p className="text-white text-sm">$124.2 | day</p>
+        </div>
+        <div className="px-5 w-full mt-5">
+          <div className="flex justify-start items-start w-full pt-5  flex-col gap-4 border-t-2 border-solid border-aspidBlue">
+            <p className="text-white text-sm">Calculate Expected Returns</p>
+            <div className="flex justify-between items-center p-4 bg-aspidBlue bg-opacity-50 w-full">
+              <p className="text-white text-sm">1035</p>
+              <p className="text-white text-sm">ZKASH</p>
+            </div>
+          </div>
+        </div>
+        <p className="px-5 text-white text-lg font-fifaks mb-5 mt-10">
+          * 7 day average APY Indication. Dependant on trade volume
+        </p>
+      </BlueBoxLayout>
     </div>
   );
 };
 
 export default Overview;
-
-const TokenBox = ({ children }) => {
-  return (
-    <div className="flex justify-start items-start flex-col gap-4 relative border-[3px] border-solid border-aspidBlue w-full pt-6 bg-dark">
-      {/* //top left ------------- */}
-      <div className="bg-dark w-2 h-1 absolute -top-1 -left-1"></div>
-      <div className="bg-dark w-1 h-1 absolute top-0 -left-1"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute top-1 left-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute top-0 left-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute top-0 left-1"></div>
-      {/* //bottom left ----------------------- */}
-      <div className="bg-dark w-2 h-1 absolute -bottom-1 -left-1"></div>
-      <div className="bg-dark w-1 h-1 absolute bottom-0 -left-1"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute bottom-1 left-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 left-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 left-1"></div>
-      {/* //top right ----------------------- */}
-      <div className="bg-dark w-2 h-1 absolute -top-1 -right-1"></div>
-      <div className="bg-dark w-1 h-1 absolute top-0 -right-1"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute top-1 right-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute top-0 right-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute top-0 right-1"></div>
-      {/* //bottom right ----------------------- */}
-      <div className="bg-dark w-2 h-1 absolute -bottom-1 -right-1"></div>
-      <div className="bg-dark w-1 h-1 absolute bottom-0 -right-1"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute bottom-1 right-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 right-0"></div>
-      <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 right-1"></div>
-      {/* //offset border ----------------------- */}
-      <div className="w-full bg-dark absolute -bottom-3 -right-3 h-full border-solid border-[3px] border-aspidBlue -z-10">
-        {/* //bottom left ----------------------- */}
-        <div className="bg-dark w-2 h-1 absolute -bottom-1 -left-1"></div>
-        <div className="bg-dark w-1 h-1 absolute bottom-0 -left-1"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute bottom-1 left-0"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 left-0"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 left-1"></div>
-        {/* //top right ----------------------- */}
-        <div className="bg-dark w-2 h-1 absolute -top-1 -right-1"></div>
-        <div className="bg-dark w-1 h-1 absolute top-0 -right-1"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute top-1 right-0"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute top-0 right-0"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute top-0 right-1"></div>
-        {/* //bottom right ----------------------- */}
-        <div className="bg-dark w-2 h-1 absolute -bottom-1 -right-1"></div>
-        <div className="bg-dark w-1 h-1 absolute bottom-0 -right-1"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute bottom-1 right-0"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 right-0"></div>
-        <div className="bg-aspidBlue w-1 h-1 absolute bottom-0 right-1"></div>
-      </div>
-      {children}
-    </div>
-  );
-};

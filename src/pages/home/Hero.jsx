@@ -10,7 +10,10 @@ const Hero = () => {
           token.
         </h2>
         <div className="flex sm:flex-row flex-col w-full justify-center items-center gap-7">
-          <Button widthFull padding={"sm:w-auto w-full px-6 py-[14px]"}>
+          <Button
+            widthFull
+            padding={"sm:w-auto h-[55px] w-full px-6 py-[14px]"}
+          >
             Buy on zKSync
           </Button>
           <Button inverse widthFull padding={"w-full sm:w-[288px] h-[55px]"}>

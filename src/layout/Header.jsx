@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
@@ -13,11 +14,13 @@ const Header = () => {
       )}
       <div className="contain  justify-between relative items-center px-3 xl:px-[36px] py-6 bg-secondaryBlack border-primaryYellow border-2 border-solid">
         <div className="bg-secondaryBlack border-2 border-primaryYellow border-solid w-full h-full absolute -bottom-2 sm:-bottom-[14px] -z-10 -right-2 sm:-right-[14px]"></div>
-        <img
-          src="/logo.png"
-          className="h-[40px] xl:h-[60px] object-contain"
-          alt=""
-        />
+        <Link to={"/"}>
+          <img
+            src="/logo.png"
+            className="h-[40px] xl:h-[60px] object-contain"
+            alt=""
+          />
+        </Link>
         <div
           className={`flex z-[90] justify-start lg:justify-center lg:static fixed top-0 ${
             headerToggle ? "right-0" : "-right-full"
