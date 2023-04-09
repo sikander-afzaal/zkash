@@ -6,12 +6,12 @@ const FaqBtn = ({ question, answer }) => {
     <div className="flex  justify-start overflow-hidden items-start flex-col w-full">
       <button
         onClick={() => setActive((prev) => !prev)}
-        className="flex bg-[#08080C] justify-between items-center px-8 border border-solid border-aspidBlue h-[75px] w-full"
+        className="flex bg-[#08080C] text-left gap-4 justify-between items-center px-8 border border-solid border-aspidBlue min-h-[75px] w-full"
       >
-        <h4 className="text-lg text-white">{question}</h4>
+        <h4 className="text-xs sm:text-sm lg:text-lg text-white">{question}</h4>
         <img
           src="/arrow.png"
-          className={`w-[35px] object-contain transition-all duration-300 ${
+          className={`w-6 lg:w-[35px] object-contain transition-all duration-300 ${
             active ? "rotate-180" : "rotate-0"
           }`}
           alt=""
