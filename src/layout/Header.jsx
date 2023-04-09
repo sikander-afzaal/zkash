@@ -74,7 +74,9 @@ const Header = () => {
                 />
               </a>
             </div>
-            <Button padding={"px-6 py-2"}>Dapp</Button>
+            <Link onClick={() => setHeaderToggle(false)} to={"/token"}>
+              <Button padding={"px-6 py-2"}>Dapp</Button>
+            </Link>
           </div>
         </div>
         <button
@@ -130,18 +132,9 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className="isolate">
-            <button className="text-black bg-primaryYellow relative px-6 py-2  text-base">
-              <span className="bg-secondaryBlack w-1 aspect-square absolute top-0 left-0"></span>
-              <span className="bg-secondaryBlack w-1 aspect-square absolute bottom-0 left-0"></span>
-              <span className="bg-lightBlue w-1 aspect-square absolute bottom-0 right-0"></span>
-              <span className="bg-secondaryBlack w-1 aspect-square absolute top-0 right-0"></span>
-              Dapp
-              <div className="w-full h-full -right-1 -bottom-1 bg-lightBlue absolute -z-10">
-                <span className="bg-secondaryBlack w-1 aspect-square absolute bottom-0 right-0"></span>
-              </div>
-            </button>
-          </div>
+          <Link onClick={() => setHeaderToggle(false)} to={"/token"}>
+            <Button padding={"px-6 py-2"}>Dapp</Button>
+          </Link>
         </div>
       </div>
     </header>
