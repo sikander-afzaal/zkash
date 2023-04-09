@@ -16,8 +16,8 @@ const Roadmap = () => {
             alt=""
           />
           <RoadmapBox
-            title="Sushi chef NFTs"
-            desc="Sushi Chef NFT Collection launch"
+            title="The Accountant NFTs"
+            desc="The Accountant NFTs Collection launch"
           />
           <RoadmapBox
             title="MemeFi Development"

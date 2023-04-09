@@ -11,7 +11,7 @@ const Tokenomics = () => {
           <InfoBox
             type2
             para1={"7% Buy | 7% Sell Tax"}
-            para2="Ticker: $ZKASH    Total Supply: 50,000,000,000"
+            para2="Ticker: $ZKASH    Total Supply: 100 MIL"
           />
         </div>
         <img src="/pie.png" className="max-w-full object-contain" alt="" />

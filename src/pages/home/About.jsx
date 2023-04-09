@@ -35,7 +35,7 @@ const About = () => {
           <AboutBox
             img="/choice.png"
             title="Your Choice!"
-            desc="Disagree with the coin we're farming? That's Ok we can't all be on the same page all of the time. Choose to take your rewards in $ZKASH instead by smashing the 'GO HAMI' button."
+            desc="Disagree with the coin we're farming? That's Ok we can't all be on the same page all of the time. Choose to take your rewards in $ZKASH instead by smashing the 'GO ZKASH' button."
           />
           <AboutBox
             img="/exposure.png"
