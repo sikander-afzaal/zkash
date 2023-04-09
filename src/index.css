@@ -25,3 +25,7 @@ body {
     @apply flex w-[90%] max-w-[1642px];
   }
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block: 150px;
+}

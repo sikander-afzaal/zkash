@@ -41,7 +41,7 @@ const Header = () => {
           <div className="w-1 2xl:block hidden bg-white"></div>
           <a
             onClick={() => setHeaderToggle(false)}
-            href="#"
+            href="#tokenomics"
             className="text-white 2xl:text-base text-sm"
           >
             Tokenomics
@@ -49,7 +49,7 @@ const Header = () => {
           <div className="w-1 2xl:block hidden bg-white"></div>
           <a
             onClick={() => setHeaderToggle(false)}
-            href="#"
+            href="#faq"
             className="text-white 2xl:text-base text-sm"
           >
             FAQ

@@ -44,7 +44,10 @@ const Faq = () => {
     },
   ];
   return (
-    <div className="wrapper md:bg-sectionBg bg-cover xl:bg-[100%__100%] mt-10 bg-center bg-no-repeat py-[50px] md:py-[150px]">
+    <div
+      id="faq"
+      className="wrapper md:bg-sectionBg bg-cover xl:bg-[100%__100%] mt-10 sm:mt-20 bg-center bg-no-repeat py-[50px] md:py-[150px]"
+    >
       <div className="contain flex-col justify-center items-center gap-10">
         <h3 className="text-white text-3xl sm:text-[48px] font-normal">FAQs</h3>
         <div className="flex w-full justify-start max-w-[1035px] items-start flex-col gap-5 mt-5">
