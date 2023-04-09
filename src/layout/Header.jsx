@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [headerToggle, setHeaderToggle] = useState(false);
@@ -26,37 +27,41 @@ const Header = () => {
             headerToggle ? "right-0" : "-right-full"
           } transition-all duration-700 flex-col lg:flex-row h-full w-full max-w-none sm:max-w-[450px] lg:w-auto lg:max-w-none lg:h-auto items-center overflow-y-auto lg:overflow-visible sm:items-start pt-[6rem] pb-[3rem] px-[3rem] lg:p-0 lg:bg-transparent bg-secondaryBlack lg:items-stretch gap-10 lg:gap-6 2xl:gap-10`}
         >
-          <a
+          <HashLink
             onClick={() => setHeaderToggle(false)}
-            href="#"
+            to="/"
+            smooth
             className="text-white 2xl:text-base text-sm"
           >
             How to Buy
-          </a>
+          </HashLink>
           <div className="w-1 2xl:block hidden bg-white"></div>
-          <a
+          <HashLink
             onClick={() => setHeaderToggle(false)}
-            href="#"
+            to="/"
+            smooth
             className="text-white 2xl:text-base text-sm"
           >
             Litepaper
-          </a>
+          </HashLink>
           <div className="w-1 2xl:block hidden bg-white"></div>
-          <a
+          <HashLink
             onClick={() => setHeaderToggle(false)}
-            href="#tokenomics"
+            to="/#tokenomics"
+            smooth
             className="text-white 2xl:text-base text-sm"
           >
             Tokenomics
-          </a>
+          </HashLink>
           <div className="w-1 2xl:block hidden bg-white"></div>
-          <a
+          <HashLink
             onClick={() => setHeaderToggle(false)}
-            href="#faq"
+            to="/#faq"
+            smooth
             className="text-white 2xl:text-base text-sm"
           >
             FAQ
-          </a>
+          </HashLink>
           <div className="flex lg:hidden justify-start items-center gap-5">
             <div className="flex justify-start items-center gap-2">
               <a href="#" target="blank">
