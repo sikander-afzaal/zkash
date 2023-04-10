@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const FaqBtn = ({ question, answer }) => {
+  const answerRef = useRef();
   const [active, setActive] = useState(false);
+  const [height, setHeight] = useState("");
+  useEffect(() => {
+    setHeight(answerRef.current.getBoundingClientRect().height);
+  }, [window.innerWidth]);
   return (
     <div className="flex  justify-start overflow-hidden items-start flex-col w-full">
       <button
@@ -18,11 +23,14 @@ const FaqBtn = ({ question, answer }) => {
         />
       </button>
       <div
+        style={{ height: active ? `${height}px` : "0px" }}
         className={`flex justify-start items-start px-3  flex-col duration-500 ${
-          active ? "max-h-[6000px] py-5 " : "max-h-0 p-0"
+          active ? " py-5 " : " p-0"
         }`}
       >
-        <p className="font-fifaks text-base text-white">{answer}</p>
+        <p ref={answerRef} className="font-fifaks text-base text-white">
+          {answer}
+        </p>
       </div>
     </div>
   );
