@@ -5,7 +5,7 @@ const Tokenomics = () => {
     <div id="tokenomics" className="wrapper mt-7 sm:mt-10">
       <div className="contain flex-col justify-start items-center gap-16">
         <div className="flex justify-center xl:flex-row flex-col items-center gap-5 xl:gap-10">
-          <h3 className="text-white text-3xl sm:text-[48px] font-normal">
+          <h3 className="text-white sm:text-3xl text-2xlfont-normal">
             Tokenomics
           </h3>
           <InfoBox
@@ -14,7 +14,7 @@ const Tokenomics = () => {
             para2="Ticker: $ZKASH    Total Supply: 100 MIL"
           />
         </div>
-        <img src="/pie.png" className="max-w-full object-contain" alt="" />
+        <img src="/pie.png" className="max-w-[1200px] object-contain" alt="" />
       </div>
     </div>
   );

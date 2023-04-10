@@ -2,7 +2,7 @@ const Roadmap = () => {
   return (
     <div className="wrapper mt-[100px] sm:mt-[180px]">
       <div className="contain flex-col gap-10 justify-center items-center">
-        <h3 className="uppercase text-white text-3xl sm:text-[48px] font-normal">
+        <h3 className="uppercase text-white sm:text-3xl text-2xlfont-normal">
           Roadmap
         </h3>
         <div className="grid items-center grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-5 xl:gap-20 sm:mt-5 w-full">

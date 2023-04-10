@@ -13,7 +13,7 @@ const Header = () => {
           className="w-full h-full bg-black fixed top-0 left-0 opacity-60 cursor-pointer lg:hidden block z-[88]"
         ></div>
       )}
-      <div className="contain  justify-between relative items-center px-3 xl:px-[36px] py-6 bg-secondaryBlack border-primaryYellow border-2 border-solid">
+      <div className="contain  justify-between relative items-center px-3 xl:px-[36px] py-4 bg-secondaryBlack border-primaryYellow border-2 border-solid">
         <div className="bg-secondaryBlack border-2 border-primaryYellow border-solid w-full h-full absolute -bottom-2 sm:-bottom-[14px] -z-10 -right-2 sm:-right-[14px]"></div>
         <Link to={"/"}>
           <img

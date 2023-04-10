@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="wrapper mt-[160px] xl:mt-[200px]">
       <div className="contain flex-col text-center justify-center items-center gap-10">
-        <h2 className="max-w-[1368px] leading-[1.25] text-white text-lg sm:text-2xl xl:text-4xl font-normal">
+        <h2 className="max-w-[1368px] leading-[1.25] text-white text-lg sm:text-2xl  font-normal">
           Build a diverse portfolio with $ZKASH. zKSync Era's first
           <span className="text-primaryYellow"> multi-currency</span> rewards
           token.
@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <img
           src="/landing-hero.png"
-          className="max-w-full mt-3 object-contain"
+          className="max-w-[700px] mt-3 object-contain"
           alt=""
         />
       </div>

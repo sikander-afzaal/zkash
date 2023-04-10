@@ -22,7 +22,7 @@ export default {
         sectionBg: "url('/section-bg.png')",
       },
       gridTemplateColumns: {
-        fluid: "repeat(auto-fit,minmax(500px,1fr))",
+        fluid: "repeat(auto-fit,minmax(400px,1fr))",
       },
     },
   },

@@ -22,6 +22,6 @@ body {
     @apply flex justify-start items-center flex-col w-full;
   }
   .contain {
-    @apply flex w-[90%] max-w-[1642px];
+    @apply flex w-[90%] max-w-[1400px];
   }
 }
