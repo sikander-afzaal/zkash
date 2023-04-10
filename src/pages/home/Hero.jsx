@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <img
           src="/landing-hero.png"
-          className="max-w-[700px] mt-3 object-contain"
+          className="max-w-[700px] w-full mt-3 object-contain"
           alt=""
         />
       </div>

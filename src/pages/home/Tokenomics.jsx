@@ -14,7 +14,11 @@ const Tokenomics = () => {
             para2="Ticker: $ZKASH    Total Supply: 100 MIL"
           />
         </div>
-        <img src="/pie.png" className="max-w-[1200px] object-contain" alt="" />
+        <img
+          src="/pie.png"
+          className="max-w-[1200px] w-full object-contain"
+          alt=""
+        />
       </div>
     </div>
   );
