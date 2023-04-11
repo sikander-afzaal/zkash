@@ -13,19 +13,19 @@ const About = () => {
           <InfoBox
             para1="With $ZKASH you will accumulate good projects on multiple chains
         throughout the bear market, just by holding!"
-            para2="You asked for ARBI season, we're here to ignite it. Be a part of the most exciting new community on the chain from the beginning!"
+            para2="You asked for ZK season, we're here to ignite it. Be a part of the most exciting new community on the chain from the beginning!"
           />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-fluid w-full gap-8 mt-8">
           <AboutBox
             img="/portfolio.png"
             title="Diversify your portfolio"
-            desc="Our contract buys the best projects on Arbitrum. Trusting the wisdom of the crowd to decide which projects to chose through our governance system."
+            desc="Our contract buys the best projects on ZK. Trusting the wisdom of the crowd to decide which projects to chose through our governance system."
           />
           <AboutBox
             img="/upto-date.png"
             title="Stay up to date"
-            desc="Our goal is to become the ultimate community hub on the arbitrum chain. We're an active community and regularly hold AMAs with teams and project updates."
+            desc="Our goal is to become the ultimate community hub on the ZK chain. We're an active community and regularly hold AMAs with teams and project updates."
           />
           <AboutBox
             img="/rewards.png"
