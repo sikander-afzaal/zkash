@@ -1,12 +1,19 @@
 import { useEffect, useRef, useState } from "react";
+import $ from "jquery";
 
 const FaqBtn = ({ question, answer }) => {
   const answerRef = useRef();
   const [active, setActive] = useState(false);
-  const [height, setHeight] = useState("");
+
   useEffect(() => {
-    setHeight(answerRef.current.getBoundingClientRect().height);
-  }, [window.innerWidth]);
+    $(answerRef.current).slideUp();
+  }, []);
+
+  useEffect(() => {
+    if (active) $(answerRef.current).slideDown();
+    else $(answerRef.current).slideUp();
+  }, [active]);
+
   return (
     <div className="flex  justify-start overflow-hidden items-start flex-col w-full">
       <button
@@ -23,7 +30,6 @@ const FaqBtn = ({ question, answer }) => {
         />
       </button>
       <div
-        style={{ height: active ? `${height}px` : "0px" }}
         className={`flex justify-start items-start px-3  flex-col duration-500 ${
           active ? " py-5 " : " p-0"
         }`}
