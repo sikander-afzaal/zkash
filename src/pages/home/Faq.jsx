@@ -10,37 +10,36 @@ const Faq = () => {
     {
       question: "What is the benefit of holding $ZKASH?",
       answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+        "By simply holding $ZKASH, the Hamachi Finance protocol will distribute rewards by the platform directly to you.",
     },
     {
       question: "How do I get my rewards?",
       answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+        "You'll be airdropped your rewards once you're first in queue. You can choose to enable Manual Claim or even 'GO ZKASH', this turns your rewards into $ZKASH.",
     },
     {
       question: "How are rewards generated?",
       answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+        "Each buy and sell will be taxed 7%, which will only be used to buy tokens and redistribute to $ZKASH holders as rewards and provide liquidity to $ZKASH LP. (% tax subject to change).",
     },
     {
       question: "How do projects benefit from $ZKASH?",
       answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+        "Projects benefit from $ZKASH by gaining exposure and increased unique holders who may not have ever heard of your project.",
     },
     {
       question: "Which tokens will be farmed?",
       answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+        "To begin, $ZKASH will begin farming tokens on Arbitrum with plans to go cross-chain and multi-chain to farm additional tokens. With our revolutionary technology we are going to bring mass exposure and rewards to holders via Hamachi Finance.",
     },
     {
       question: "What chains do you plan on expanding?",
       answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+        "We are exploring all the chains starting with L2s and side-chains. (Optimism, Avalanche, Binance Smart Chain, Pulsechain, and more)",
     },
     {
       question: "Tokenomics",
-      answer:
-        "ZKASH Finance is a multi-currency and multi-chain reward token. By buying and holding $ZKASH you are farming rewards and accumulating tokens supported by the ZKASH Finance protocol. These tokens are researched and reviewed by our crypto analysts.",
+      answer: "Scroll up",
     },
   ];
   return (
