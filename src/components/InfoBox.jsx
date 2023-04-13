@@ -32,8 +32,8 @@ const InfoBox = ({ para1, para2, type2 }) => {
         </>
       ) : (
         <>
-          <p className="text-white text-base font-fifaks">{para1}</p>
-          <p className="text-white text-base font-fifaks">{para2}</p>
+          <p className="text-white text-lg font-fifaks">{para1}</p>
+          <p className="text-white text-lg font-fifaks">{para2}</p>
         </>
       )}
     </div>
