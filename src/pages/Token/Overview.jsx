@@ -1,8 +1,12 @@
 import { useState } from "react";
+
 import BlueBoxLayout from "../../components/BlueBoxLayout";
+import Chart from "../../components/Chart";
 
 const Overview = () => {
   const [time, setTime] = useState(5);
+  const [inputState, setInputState] = useState(1035);
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full gap-12 sm:gap-8 relative">
       <img
@@ -37,11 +41,12 @@ const Overview = () => {
             />
           </div>
         </div>
-        <img
+        <Chart />
+        {/* <img
           src="/reward-graph.png"
           className="w-full h-[172px] object-cover mt-4"
           alt=""
-        />
+        /> */}
       </BlueBoxLayout>
       <BlueBoxLayout>
         <h3 className="text-aspidBlue px-5 text-xl sm:text-2xl">$ZKASH</h3>
@@ -186,7 +191,15 @@ const Overview = () => {
           <div className="flex justify-start items-start w-full pt-5  flex-col gap-4 border-t-2 border-solid border-aspidBlue">
             <p className="text-white text-sm">Calculate Expected Returns</p>
             <div className="flex justify-between items-center p-4 bg-aspidBlue bg-opacity-50 w-full">
-              <p className="text-white text-sm">1035</p>
+              <p className="text-white text-sm">
+                <input
+                  className="bg-transparent outline-none w-full"
+                  type="text"
+                  value={inputState}
+                  onChange={(e) => setInputState(e.target.value)}
+                  placeholder={0}
+                />
+              </p>
               <p className="text-white text-sm">ZKASH</p>
             </div>
           </div>
